@@ -6,7 +6,7 @@ export const Marvel = () => {
   const {id}=useParams();
   const [item,setItem]=useState()
   const fetch=async()=>{
-    const res=await axios.get(`https://gateway.marvel.com:443/v1/public/characters/${id}?ts=1&apikey=6ee95fdfe60c0d9e50c617c10ce8fa65644c72b0`)
+    const res=await axios.get(`https://gateway.marvel.com:443/v1/public/characters/${id}?ts=1&apikey=5fe862c5a82b32685bb0ce949ea92347&hash=a1c0a73b9d553dcf5969b9bfc2125af6`)
     setItem(res.data.data.results[0])
   }
   fetch();
